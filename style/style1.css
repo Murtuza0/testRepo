@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    min-height: 1400px;
+    background-color: #000;
+    display: grid;
+    grid-template-rows: 1.50fr 2fr;
+}
+.top{
+    position: relative;
+    background-color: #353535;
+    padding: 50px;
+}
+.logo{
+    position: relative;
+}
+.logo .icon{
+    display: inline-block;
+    color: #ff0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.logo .icon span{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.logo ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    width: 50%;
+    list-style-type: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+}
+.logo ul li{
+    color: #0a0a0a;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 2.50s ease-in-out;
+}
+.logo ul li:hover{
+    color: #fff;
+    border-bottom: 2px solid #ff0;
+}
+.iconlink{
+    position: relative;
+    margin-left: 85%;
+}
+.iconlink ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    list-style-type: none;
+    position: absolute;
+    top: -18px; 
+}
+.iconlink ul li{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+}
+.circle{
+    background-color: #222;
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    position: absolute;
+    left: 28%;
+    top: 18%;
+    border: 1px solid rgba(15, 15, 17, 0.596);
+}
+.circle .image{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    overflow: hidden;
+}
+.circle .image img{
+    position: absolute;
+    left: -5%;
+    top: -20%;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1000;
+}
+.profile{
+    padding-top: 12%;
+}
+.profile .text{
+    position: relative;
+}
+.profile .text h1 span{
+    color: #0a0a0a;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.profile .text h1{
+    color: #fff;
+    font-size: 2.75em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.border{
+    width: 20%;
+    height: 5px;
+    background-color: #ff0;
+    margin-bottom: 30px;
+}
+.profile p{
+    color: #0a0a0a;
+    font-size: 1em;
+    font-weight: 100;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.services{
+    position: relative;
+}
+.services .text1{
+    float: right;
+    position: absolute;
+    top: -300px;
+    left: 65%;
+}
+.services .text1 span{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.services .text1 h2{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    cursor: pointer;
+    line-height: 25px;
+}
+.services .link{
+    position: relative;
+}
+.link{
+    float: right;
+    position: absolute;
+    top: -160px;
+    left: -22%;
+}
+.link span{
+    color: #ff0;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 1rem;
+}
+.link .arrow{
+    padding-left: 10px;
+}
+.mullink{
+    position: relative;
+}
+.mullink .icon1{
+    position: absolute;
+    top: -110px;
+    left: 62%;
+}
+.mullink .icon1 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+.mullink .icon1 ul li{
+    color: #ff0;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.mullink li i{
+    border: 8px solid rgba(15, 15, 17, 0.596);
+    border-radius: 50%;
+}
+
+                                /* Bottom */
+.bottom{
+    position: relative;
+    background-color: #222;
+    padding: 50px;
+}
+.box{
+    position: relative;
+}
+.center{
+    width: 100%;
+    height: 100px;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: #353535;
+    position: absolute;
+    top: -100px;
+    z-index: 1000;
+    border: solid #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.box1{
+    width: 20%;
+    height: 50px;
+    background-color: #222;
+    padding: 13px;
+    text-align: center;
+}
+.box1 .meta{
+    color: #00f;
+    font-size: 1.4rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+.box1 .meta span{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.box2{
+    width: 20%;
+    height: 50px;
+    background-color: #222;
+    padding: 13px;
+    text-align: center;
+}
+.box2 .p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.box2 #blue{
+    color: #00f;
+}
+.box2 #red{
+    color: #f00;
+}
+.box2 #yellow{
+    color: #ff0;
+}
+.box2 #green{
+    color: #008000;
+}
+.box3{
+    width: 20%;
+    height: 50px;
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+.box3 span{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.box3 .in{
+    font-size: 1rem;
+    color: #000;
+    background-color: #00f;
+    border: 2px solid #00f;
+    border-radius: 10%;
+}
+.box4{
+    width: 20%;
+    height: 50px;
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+.box4 .slack{
+    color: rgba(117, 212, 21, 0.719);
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.box4 span{
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.left{
+    position: relative;
+    padding-top: 80px;
+}
+.left h2{
+    color: #fff;
+    font-size: 1.80em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.left p{
+    color: #c0c0c0;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+.table{
+    position: relative;
+}
+.table td{
+    color: #ff0;
+    font-size: 1.2em;
+    font-weight: 300;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+.table td p{
+    color: #c0c0c0;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-right: 55px;
+}
+.image1{
+    position: absolute;
+}
+.image1 .image{
+    position: relative;
+    top: -330px;
+    left: 155%;
+} 
+.image1 .image img{
+    width: 50%;
+    height: 50%;
+}
+.image1 .text{
+    position: relative;
+    margin-top: -405px;
+    margin-left: 210%;
+    width: 90%;
+    border-bottom: 2px solid #ff0;
+    padding-bottom: 10px;
+}
+.image1 .text span{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    line-height: 30px;
+}
+.image1 .text p{
+    color: #c0c0c0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.image1 .text i{
+    color: #ff0;
+    padding-left: 100px;
+}
+.image2{
+    position: absolute;
+}
+.image2 .image{
+    position: relative;
+    top: -200px;
+    left: 166%;
+}
+.image2 .image img{
+    width: 54%;
+    height: 48%;
+}
+.image2 .text{
+    position: relative;
+    margin-top: -275px;
+    margin-left: 225%;
+    width: 99%;
+    border-bottom: 2px solid #ff0;
+    padding-bottom: 10px;
+}
+.image2 .text span{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    line-height: 30px;
+}
+.image2 .text p{
+    color: #c0c0c0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.image2 .text i{
+    color: #ff0;
+    padding-left: 50px;
+}
+.image3{
+    position: absolute;
+}
+.image3 .image{
+    position: relative;
+    top: -70px;
+    left: 174%;
+}
+.image3 .image img{
+    width: 56%;
+    height: 40%;
+}
+.image3 .text{
+    position: relative;
+    margin-top: -150px;
+    margin-left: 235%;
+    width: 105%;
+    border-bottom: 2px solid #ff0;
+    padding-bottom: 12px;
+}
+.image3 .text span{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 30px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.image3 .text p{
+    color: #c0c0c0;
+    font-size: 15px;
+}
+.image3 .text i{
+    color: #ff0;
+    padding-left: 45px;
+}
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+.foot1{
+    width: 30%;
+    height: 200px;
+    background-color: #353535;
+    padding: 25px;
+}
+.foot1 .icon{
+    color: #ff0;
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+.foot1 .icon i{
+    border: 10px solid #222;
+    border-radius: 50%;
+}
+.foot1 .text h4{
+    color: #fff;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+.foot1 .text p{
+    color: #c0c0c0;
+    padding-bottom: 30px;
+}
+.foot2{
+    width: 30%;
+    height: 200px;
+    background-color: #353535;
+    padding: 25px;
+}
+.foot2 .icon{
+    color: #ff0;
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+.foot2 .icon i{
+    border: 10px solid #222;
+    border-radius: 50%;
+}
+.foot2 .text h4{
+    color: #fff;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+.foot2 .text p{
+    color: #c0c0c0;
+    padding-bottom: 30px;
+}
+.foot3{
+    width: 30%;
+    height: 200px;
+    background-color: #353535;
+    padding: 25px;
+}
+.foot3 .icon{
+    color: #ff0;
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+.foot3 .icon i{
+    border: 10px solid #222;
+    border-radius: 50%;
+}
+.foot3 .text h4{
+    color: #fff;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+.foot3 .text p{
+    color: #c0c0c0;
+    padding-bottom: 30px;
+}
